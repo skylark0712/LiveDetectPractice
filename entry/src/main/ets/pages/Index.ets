@@ -1,24 +1,20 @@
 @Entry
 @Component
-struct Index {
-  @State message: string = '智能巡检';
-
+struct MainPage {
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
-        .onClick(() => {
-          this.message = 'Welcome';
-        })
+    Column() {
+      /**
+       * 底部菜单栏：试验、报告、设备、我的
+       */
+      Tabs({
+        barPosition: BarPosition.End
+      }) {
+        TabContent().tabBar('试验')
+        TabContent().tabBar('报告')
+        TabContent().tabBar('设备')
+        TabContent().tabBar('我的')
+      }
+      .barHeight('50vp')
     }
-    .height('100%')
-    .width('100%')
-    // 学会 GitHub 管理代码了，我好叼
   }
 }
