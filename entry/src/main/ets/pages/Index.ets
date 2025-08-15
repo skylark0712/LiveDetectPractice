@@ -1,5 +1,3 @@
-import { autoFillManager } from '@kit.AbilityKit'
-
 @Entry
 @Component
 struct MainPage {
@@ -30,14 +28,14 @@ struct MainPage {
         Button('国网标准检修模式')
           .backgroundColor('#ff618b9d')
           .borderRadius(10)
-          .height('12%')
+          .height('13%')
           .fontSize('25fp')
           .width('100%')
 
         Button('任务下发标准检修模式')
           .backgroundColor('#ff68806c')
           .borderRadius(10)
-          .height('12%')
+          .height('13%')
           .fontSize('25fp')
           .margin(19)
           .width('100%')
@@ -45,13 +43,14 @@ struct MainPage {
         Button('日常巡检模式')
           .backgroundColor('#ff6b6365')
           .borderRadius(10)
-          .height('12%')
+          .height('13%')
           .fontSize('25fp')
           .width('100%')
       }
-      .backgroundColor('#ffc6c6f3')
+      .margin({ top: '55vp' })
     }
-    .backgroundColor('#ffe8d1a7')
     .height('100%')
   }
 }
+
+// 墨刀全屏 77% 缩放比例刚刚好用来比对大小
