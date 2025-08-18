@@ -25,7 +25,91 @@ struct MissionCreate {
        * 诊断模式
        */
       Text('诊断模式')
+        .width('100%')
+        .textAlign(TextAlign.Start)
+        .margin({ left: '30vp', top: '7vp' })
 
+      Row() {
+        /**
+         * 1、变压器
+         */
+        Button() {
+          Column() {
+            Image($r("app.media.ikkyu"))
+              .width('19.5%')
+            Text('变压器')
+              .fontSize(13)
+          }
+        }
+        .backgroundColor('#fff')
+        .borderWidth(1)
+        .borderColor('#ffc6c6c6')
+        .borderRadius(10)
+
+        /**
+         * 2、开关柜
+         */
+        Button() {
+          Column() {
+            Image($r("app.media.ikkyu"))
+              .width('19.5%')
+            Text('开关柜')
+              .fontSize(13)
+          }
+        }
+        .backgroundColor('#fff')
+        .borderWidth(1)
+        .borderColor('#ffc6c6c6')
+        .borderRadius(10)
+
+        /**
+         * 3、GIS
+         */
+        Button() {
+          Column() {
+            Image($r("app.media.ikkyu"))
+              .width('19.5%')
+            Text('GIS')
+              .fontSize(13)
+          }
+        }
+        .backgroundColor('#fff')
+        .borderWidth(1)
+        .borderColor('#ffc6c6c6')
+        .borderRadius(10)
+
+        /**
+         * 4、断路器
+         */
+        Button() {
+          Column() {
+            Image($r("app.media.ikkyu"))
+              .width('19.5%')
+            Text('断路器')
+              .fontSize(13)
+          }
+        }
+        .backgroundColor('#fff')
+        .borderWidth(1)
+        .borderColor('#ffc6c6c6')
+        .borderRadius(10)
+
+        /**
+         * 5、架空线路
+         */
+        Button() {
+          Column() {
+            Image($r("app.media.ikkyu"))
+              .width('19.5%')
+            Text('架空线路')
+              .fontSize(13)
+          }
+        }
+        .backgroundColor('#fff')
+        .borderWidth(1)
+        .borderColor('#ffc6c6c6')
+        .borderRadius(10)
+      }
     }
   }
 }
