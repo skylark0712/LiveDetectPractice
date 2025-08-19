@@ -235,8 +235,12 @@ struct MissionCreate {
          */
         GridItem() {
           Button() {
-            Text('TEV试验')
-              .fontSize(12)
+            Column() {
+              Image($r("app.media.tev_purple"))
+                .width('100%')
+              Text('TEV试验')
+                .fontSize(12)
+            }
           }
           .backgroundColor('#fff')
           .borderWidth(1)
@@ -252,8 +256,12 @@ struct MissionCreate {
          */
         GridItem() {
           Button() {
-            Text('US试验')
-              .fontSize(12)
+            Column() {
+              Image($r("app.media.us_yellow"))
+                .width('100%')
+              Text('US试验')
+                .fontSize(12)
+            }
           }
           .backgroundColor('#fff')
           .borderWidth(1)
@@ -269,8 +277,12 @@ struct MissionCreate {
          */
         GridItem() {
           Button() {
-            Text('UHF试验')
-              .fontSize(12)
+            Column() {
+              Image($r("app.media.uhf_green"))
+                .width('100%')
+              Text('UHF试验')
+                .fontSize(12)
+            }
           }
           .backgroundColor('#fff')
           .borderWidth(1)
@@ -286,8 +298,12 @@ struct MissionCreate {
          */
         GridItem() {
           Button() {
-            Text('HFCT试验')
-              .fontSize(12)
+            Column() {
+              Image($r("app.media.hfct_red"))
+                .width('100%')
+              Text('HFCT试验')
+                .fontSize(12)
+            }
           }
           .backgroundColor('#fff')
           .borderWidth(1)
@@ -303,8 +319,12 @@ struct MissionCreate {
          */
         GridItem() {
           Button() {
-            Text('红外试验')
-              .fontSize(12)
+            Column() {
+              Image($r("app.media.red_orange"))
+                .width('100%')
+              Text('红外试验')
+                .fontSize(12)
+            }
           }
           .backgroundColor('#fff')
           .borderWidth(1)
