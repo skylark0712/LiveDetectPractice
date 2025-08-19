@@ -27,7 +27,7 @@ struct MissionCreate {
       Text('诊断模式')
         .width('100%')
         .textAlign(TextAlign.Start)
-        .margin({ left: '30vp', top: '7vp' })
+        .margin({ left: '30vp', top: '7vp', bottom: '7vp' })
 
       Row() {
         /**
@@ -40,6 +40,8 @@ struct MissionCreate {
             Text('变压器')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -56,6 +58,8 @@ struct MissionCreate {
             Text('开关柜')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -72,6 +76,8 @@ struct MissionCreate {
             Text('GIS')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -88,6 +94,8 @@ struct MissionCreate {
             Text('断路器')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -104,6 +112,8 @@ struct MissionCreate {
             Text('架空线路')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -117,7 +127,7 @@ struct MissionCreate {
       Text('巡检模式')
         .width('100%')
         .textAlign(TextAlign.Start)
-        .margin({ left: '30vp', top: '7vp' })
+        .margin({ left: '30vp', top: '9vp', bottom: '7vp' })
 
       Row() {
         /**
@@ -130,6 +140,8 @@ struct MissionCreate {
             Text('TEV试验')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -146,6 +158,8 @@ struct MissionCreate {
             Text('US试验')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -162,6 +176,8 @@ struct MissionCreate {
             Text('UHF试验')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -178,6 +194,8 @@ struct MissionCreate {
             Text('HFCT试验')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -194,6 +212,8 @@ struct MissionCreate {
             Text('红外试验')
               .fontSize(13)
           }
+          .height('10%')
+          .justifyContent(FlexAlign.SpaceEvenly)
         }
         .backgroundColor('#fff')
         .borderWidth(1)
@@ -207,7 +227,7 @@ struct MissionCreate {
       Text('检测项目')
         .width('100%')
         .textAlign(TextAlign.Start)
-        .margin({ left: '30vp', top: '7vp' })
+        .margin({ left: '30vp', top: '9vp', bottom: '7vp' })
     }
   }
 }
