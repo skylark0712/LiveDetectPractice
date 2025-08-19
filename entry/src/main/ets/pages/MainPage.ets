@@ -1,3 +1,9 @@
+/**
+ * 1、启动界面
+ *
+ * @author 小生化
+ * @date 2025/8/19 11:23
+ */
 @Entry
 @Component
 struct MainPage {
