@@ -228,6 +228,96 @@ struct MissionCreate {
         .width('100%')
         .textAlign(TextAlign.Start)
         .margin({ left: '30vp', top: '9vp', bottom: '7vp' })
+
+      Grid() {
+        /**
+         * TEV试验
+         */
+        GridItem() {
+          Button() {
+            Text('TEV试验')
+              .fontSize(12)
+          }
+          .backgroundColor('#fff')
+          .borderWidth(1)
+          .borderColor('#ffc6c6c6')
+          .borderRadius(10)
+          .height('100%')
+          .width('100%')
+        }
+        .padding(5)
+
+        /**
+         * US试验
+         */
+        GridItem() {
+          Button() {
+            Text('US试验')
+              .fontSize(12)
+          }
+          .backgroundColor('#fff')
+          .borderWidth(1)
+          .borderColor('#ffc6c6c6')
+          .borderRadius(10)
+          .height('100%')
+          .width('100%')
+        }
+        .padding(5)
+
+        /**
+         * UHF试验
+         */
+        GridItem() {
+          Button() {
+            Text('UHF试验')
+              .fontSize(12)
+          }
+          .backgroundColor('#fff')
+          .borderWidth(1)
+          .borderColor('#ffc6c6c6')
+          .borderRadius(10)
+          .height('100%')
+          .width('100%')
+        }
+        .padding(5)
+
+        /**
+         * HFCT试验
+         */
+        GridItem() {
+          Button() {
+            Text('HFCT试验')
+              .fontSize(12)
+          }
+          .backgroundColor('#fff')
+          .borderWidth(1)
+          .borderColor('#ffc6c6c6')
+          .borderRadius(10)
+          .height('100%')
+          .width('100%')
+        }
+        .padding(5)
+
+        /**
+         * 红外试验
+         */
+        GridItem() {
+          Button() {
+            Text('红外试验')
+              .fontSize(12)
+          }
+          .backgroundColor('#fff')
+          .borderWidth(1)
+          .borderColor('#ffc6c6c6')
+          .borderRadius(10)
+          .height('100%')
+          .width('100%')
+        }
+        .padding(5)
+      }
+      .columnsTemplate('1fr 1fr')
+      .rowsTemplate('1fr 1fr 1fr')
+      .height('40%')
     }
   }
 }
