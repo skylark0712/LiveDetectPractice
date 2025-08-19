@@ -12,14 +12,25 @@ struct MissionCreate {
       /**
        * 标题栏
        */
-      Text('智能巡检')
-        .backgroundColor('#ff1e40af')
-        .fontColor('white')
-        .fontSize('21fp')
-        .fontWeight(FontWeight.Bold)
-        .height('7.5%')
-        .textAlign(TextAlign.Center)
-        .width('100%')
+      Stack() {
+        Text('智能巡检')
+          .backgroundColor('#ff1e40af')
+          .fontColor('white')
+          .fontSize('21fp')
+          .fontWeight(FontWeight.Bold)
+          .height('7.5%')
+          .textAlign(TextAlign.Center)
+          .width('100%')
+        Button('←')
+          .backgroundColor('#ff1e40af')
+          .fontColor('white')
+          .borderRadius(0)
+          .height('7.5%')
+          .fontSize('16fp')
+          .width('15%')
+          .align(Alignment.Start)
+      }
+      .alignContent(Alignment.Start)
 
       /**
        * 图片栏
