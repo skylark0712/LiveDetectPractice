@@ -7,55 +7,68 @@
 @Entry
 @Component
 struct MainPage {
+  pathStack: NavPathStack = new NavPathStack();
+
+  login(_result: boolean): void {
+    this.pathStack.pushPathByName('MissionCreate', null);
+  }
+
   build() {
-    Column() {
-      /**
-       * 标题栏
-       */
-      Text('智能巡检')
-        .backgroundColor('#ff1e40af')
-        .fontColor('white')
-        .fontSize('21fp')
-        .fontWeight(FontWeight.Bold)
-        .height('7.5%')
-        .textAlign(TextAlign.Center)
-        .width('100%')
-
-      /**
-       * 图片栏
-       */
-      Image($r('app.media.title1'))
-        .width('100%')
-
-      /**
-       * 三个按钮组合
-       */
+    Navigation(this.pathStack) {
       Column() {
-        Button('国网标准检修模式')
-          .backgroundColor('#ff618b9d')
-          .borderRadius(10)
-          .height('13%')
-          .fontSize('25fp')
+        /**
+         * 标题栏
+         */
+        Text('智能巡检')
+          .backgroundColor('#ff1e40af')
+          .fontColor('white')
+          .fontSize('21fp')
+          .fontWeight(FontWeight.Bold)
+          .height('7.5%')
+          .textAlign(TextAlign.Center)
           .width('100%')
 
-        Button('任务下发标准检修模式')
-          .backgroundColor('#ff68806c')
-          .borderRadius(10)
-          .height('13%')
-          .fontSize('25fp')
-          .margin(19)
+        /**
+         * 图片栏
+         */
+        Image($r('app.media.title1'))
           .width('100%')
 
-        Button('日常巡检模式')
-          .backgroundColor('#ff6b6365')
-          .borderRadius(10)
-          .height('13%')
-          .fontSize('25fp')
-          .width('100%')
+        /**
+         * 三个按钮组合
+         */
+        Column() {
+          Button('国网标准检修模式')
+            .backgroundColor('#ff618b9d')
+            .borderRadius(10)
+            .height('13%')
+            .fontSize('25fp')
+            .width('100%')
+
+          Button('任务下发标准检修模式')
+            .backgroundColor('#ff68806c')
+            .borderRadius(10)
+            .height('13%')
+            .fontSize('25fp')
+            .margin(19)
+            .width('100%')
+
+          Button('日常巡检模式')
+            .backgroundColor('#ff6b6365')
+            .borderRadius(10)
+            .height('13%')
+            .fontSize('25fp')
+            .width('100%')
+            .onClick(() => {
+              this.login(true);
+            })
+        }
+        .margin({ top: '55vp' })
       }
-      .margin({ top: '55vp' })
+      .height('100%')
     }
-    .height('100%')
+    .hideTitleBar(true)
+    .hideToolBar(true)
   }
 }
 

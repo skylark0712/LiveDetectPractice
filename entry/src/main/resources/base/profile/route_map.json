@@ -1,0 +1,12 @@
+{
+  "routerMap": [
+    {
+      "name": "MissionCreate",
+      "pageSourceFile": "src/main/ets/pages/MissionCreate.ets",
+      "buildFunction": "MainPageBuilder",
+      "data": {
+        "description" : "this is mainPage"
+      }
+    }
+  ]
+}
