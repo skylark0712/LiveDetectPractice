@@ -8,9 +8,13 @@
 @Component
 struct MainPage {
   pathStack: NavPathStack = new NavPathStack();
+  @State message: string = ''
 
   login(_result: boolean): void {
-    this.pathStack.pushPathByName('MissionCreate', null);
+    this.pathStack.pushPathByName('MissionCreate', '', (data) => {
+      // 用于页面出栈时触发该回调处理返回结果
+      this.message = JSON.stringify(data.result);
+    });
   }
 
   build() {

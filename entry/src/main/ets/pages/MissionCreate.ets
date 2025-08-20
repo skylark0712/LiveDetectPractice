@@ -12,6 +12,8 @@ export function MainPageBuilder() {
 @Entry
 @Component
 struct MissionCreate {
+  pathStack: NavPathStack = new NavPathStack()
+
   build() {
     NavDestination() {
       Column() {
@@ -35,6 +37,9 @@ struct MissionCreate {
             .fontSize('16fp')
             .width('15%')
             .align(Alignment.Start)
+            .onClick(() => {
+              this.pathStack.pop()
+            })
         }
         .alignContent(Alignment.Start)
 
@@ -365,5 +370,8 @@ struct MissionCreate {
     }
     .hideTitleBar(true)
     .hideToolBar(true)
+    .onReady((context: NavDestinationContext) => {
+      this.pathStack = context.pathStack;
+    })
   }
 }
