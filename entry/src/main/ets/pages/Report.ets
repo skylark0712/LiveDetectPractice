@@ -7,6 +7,73 @@
 @Entry
 @Component
 struct Report {
+  @State isComplete1: boolean = false;
+  @State isComplete2: boolean = false;
+  @State isComplete3: boolean = false;
+  @State isComplete4: boolean = false;
+  @State isComplete5: boolean = false;
+  @State isComplete6: boolean = false;
+
+  @Builder
+  labelIcon1(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete1 = !this.isComplete1;
+      })
+  }
+
+  @Builder
+  labelIcon2(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete2 = !this.isComplete2;
+      })
+  }
+
+  @Builder
+  labelIcon3(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete3 = !this.isComplete3;
+      })
+  }
+
+  @Builder
+  labelIcon4(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete4 = !this.isComplete4;
+      })
+  }
+
+  @Builder
+  labelIcon5(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete5 = !this.isComplete5;
+      })
+  }
+
+  @Builder
+  labelIcon6(icon: Resource) {
+    Image(icon)
+      .width(20)
+      .margin({ left: 40 })
+      .onClick(() => {
+        this.isComplete6 = !this.isComplete6;
+      })
+  }
+
   build() {
     Column() {
       /**
@@ -39,14 +106,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete1) {
+            this.labelIcon1($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon1($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -65,14 +134,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete2) {
+            this.labelIcon2($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon2($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -91,14 +162,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete3) {
+            this.labelIcon3($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon3($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -117,14 +190,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete4) {
+            this.labelIcon4($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon4($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -143,14 +218,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete5) {
+            this.labelIcon5($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon5($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -169,14 +246,16 @@ struct Report {
           }
           .width('100%')
           .height('12%')
-          .borderRadius(10)
+          .borderRadius(5)
           .backgroundColor('#fff')
           .borderColor('#ffc6c6c6')
           .borderWidth(1)
 
-          Image($r('app.media.ic_default'))
-            .width(20)
-            .margin({ left: 40 })
+          if (this.isComplete6) {
+            this.labelIcon6($r('app.media.ic_ok'))
+          } else {
+            this.labelIcon6($r('app.media.ic_default'))
+          }
         }
         .margin(5)
         .alignContent(Alignment.Start)
@@ -187,6 +266,14 @@ struct Report {
         right: 10,
         bottom: 5
       })
+
+      /**
+       * 数据上传
+       */
+      Button('数据上传')
+        .borderRadius(5)
+        .backgroundColor('#ff1684fc')
+        .width(125)
     }
   }
 }
