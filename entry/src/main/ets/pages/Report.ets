@@ -28,104 +28,158 @@ struct Report {
         /**
          * TEV试验
          */
-        Button() {
-          Column() {
-            Text('TEV试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('TEV试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
 
         /**
          * US试验
          */
-        Button() {
-          Column() {
-            Text('US试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('US试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
 
         /**
          * HFCT试验
          */
-        Button() {
-          Column() {
-            Text('HFCT试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('HFCT试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
 
         /**
          * UHF试验
          */
-        Button() {
-          Column() {
-            Text('UHF试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('UHF试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
 
         /**
          * 快速试验
          */
-        Button() {
-          Column() {
-            Text('快速试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('快速试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
 
         /**
          * 开关柜试验
          */
-        Button() {
-          Column() {
-            Text('开关柜试验')
-            Text('2025-07-18 14:20:21')
+        Stack() {
+          Button() {
+            Column() {
+              Text('开关柜试验')
+                .fontSize(20)
+                .margin({ bottom: 10 })
+              Text('2025-07-18 14:20:21')
+            }
           }
+          .width('100%')
+          .height('12%')
+          .borderRadius(10)
+          .backgroundColor('#fff')
+          .borderColor('#ffc6c6c6')
+          .borderWidth(1)
+
+          Image($r('app.media.ic_default'))
+            .width(20)
+            .margin({ left: 40 })
         }
-        .width('100%')
-        .height('12%')
         .margin(5)
-        .borderRadius(10)
-        .backgroundColor('#fff')
-        .borderColor('#ffc6c6c6')
-        .borderWidth(1)
+        .alignContent(Alignment.Start)
       }
       .margin({
         left: 10,
