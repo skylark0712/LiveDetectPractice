@@ -25,60 +25,107 @@ struct Report {
        * 一列六个大按钮
        */
       Column() {
-        Button('TEV试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
-        Button('US试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
-        Button('HFCT试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
-        Button('UHF试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
-        Button('快速试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
-        Button('开关柜试验')
-          .width('100%')
-          .height('12%')
-          .margin(5)
-          .borderRadius(10)
-          .backgroundColor('#fff')
-          .fontColor('#000')
-          .borderColor('#ffc6c6c6')
-          .borderWidth(1)
+        /**
+         * TEV试验
+         */
+        Button() {
+          Column() {
+            Text('TEV试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
+
+        /**
+         * US试验
+         */
+        Button() {
+          Column() {
+            Text('US试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
+
+        /**
+         * HFCT试验
+         */
+        Button() {
+          Column() {
+            Text('HFCT试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
+
+        /**
+         * UHF试验
+         */
+        Button() {
+          Column() {
+            Text('UHF试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
+
+        /**
+         * 快速试验
+         */
+        Button() {
+          Column() {
+            Text('快速试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
+
+        /**
+         * 开关柜试验
+         */
+        Button() {
+          Column() {
+            Text('开关柜试验')
+            Text('2025-07-18 14:20:21')
+          }
+        }
+        .width('100%')
+        .height('12%')
+        .margin(5)
+        .borderRadius(10)
+        .backgroundColor('#fff')
+        .borderColor('#ffc6c6c6')
+        .borderWidth(1)
       }
       .margin({
         left: 10,
