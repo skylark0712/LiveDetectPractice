@@ -7,37 +7,43 @@
 @Entry
 @Component
 struct Device {
-  scroller: Scroller = new Scroller();
-  layoutOptions1: GridLayoutOptions = {
-    regularSize: [1, 1],
-    irregularIndexes: [0, 6]
-  }
-
-  /**
-   * 标题栏
-   */
   build() {
     Column() {
-      Text('设   备')
-        .backgroundColor('#ff1e40af')
-        .fontColor('white')
-        .fontSize('21fp')
-        .fontWeight(FontWeight.Bold)
-        .height('7.5%')
-        .textAlign(TextAlign.Center)
-        .width('100%')
+      /**
+       * 标题栏
+       */
+      Stack() {
+        Text('设   备')
+          .backgroundColor('#ff1e40af')
+          .fontColor('white')
+          .fontSize('21fp')
+          .fontWeight(FontWeight.Bold)
+          .height('7.5%')
+          .textAlign(TextAlign.Center)
+          .width('100%')
+        Button('+')
+          .backgroundColor('#ff1e40af')
+          .fontColor('white')
+          .borderRadius(0)
+          .height('7.5%')
+          .fontSize('16fp')
+          .width('25%')
+      }
+      .alignContent(Alignment.End)
 
       Grid() {
         /**
-         * TEV传感
+         * 1、TEV传感器
          */
         GridItem() {
           Button() {
             Column() {
-              Text('TEV传感')
-                .fontSize(12)
+              Text('TEV传感器')
+                .fontSize(16)
+                .margin(10)
               Text('设备标识码')
-                .fontSize(12)
+                .fontSize(14)
+                .fontColor('#ff676767')
             }
           }
           .backgroundColor('#ffa5d8ff')
@@ -45,18 +51,20 @@ struct Device {
           .height('100%')
           .width('100%')
         }
-        .padding(5)
+        .padding(7)
 
         /**
-         * 接触式US传感器
+         * 2、接触式US传感器
          */
         GridItem() {
           Button() {
             Column() {
               Text('接触式US传感器')
-                .fontSize(12)
+                .fontSize(16)
+                .margin(10)
               Text('设备标识码')
-                .fontSize(12)
+                .fontSize(14)
+                .fontColor('#ff676767')
             }
           }
           .backgroundColor('#ffb2f2bb')
@@ -64,18 +72,20 @@ struct Device {
           .height('100%')
           .width('100%')
         }
-        .padding(5)
+        .padding(7)
 
         /**
-         * 非接触式US传感器
+         * 3、非接触式US传感器
          */
         GridItem() {
           Button() {
             Column() {
               Text('非接触式US传感器')
-                .fontSize(12)
+                .fontSize(16)
+                .margin(10)
               Text('设备标识码')
-                .fontSize(12)
+                .fontSize(14)
+                .fontColor('#ff676767')
             }
           }
           .backgroundColor('#ffffec99')
@@ -83,18 +93,20 @@ struct Device {
           .height('100%')
           .width('100%')
         }
-        .padding(5)
+        .padding(7)
 
         /**
-         * HFCT传感器
+         * 4、HFCT传感器
          */
         GridItem() {
           Button() {
             Column() {
               Text('HFCT传感器')
-                .fontSize(12)
+                .fontSize(16)
+                .margin(10)
               Text('设备标识码')
-                .fontSize(12)
+                .fontSize(14)
+                .fontColor('#ff676767')
             }
           }
           .backgroundColor('#ffffd8a8')
@@ -102,28 +114,35 @@ struct Device {
           .height('100%')
           .width('100%')
         }
-        .padding(5)
+        .padding(7)
       }
+      .padding(10)
       .columnsTemplate('1fr 1fr')
       .rowsTemplate('1fr 1fr')
       .height('35%')
+      .margin({ top: 30 })
 
       /**
-       * UHF传感器
+       * 5、UHF传感器
        */
-      Button() {
-        Column() {
-          Text('UHF传感器')
-            .fontSize(12)
-          Text('设备标识码')
-            .fontSize(12)
+      Row() {
+        Button() {
+          Column() {
+            Text('UHF传感器')
+              .fontSize(16)
+              .margin(10)
+            Text('设备标识码')
+              .fontSize(14)
+              .fontColor('#ff676767')
+          }
         }
+        .padding(7)
+        .backgroundColor('#ffb197fc')
+        .borderRadius(10)
+        .height('14%')
+        .width('100%')
       }
-      .padding(5)
-      .backgroundColor('#ffb197fc')
-      .borderRadius(10)
-      .height('10%')
-      .width('100%')
+      .margin({ left: 17, right: 17 })
     }
   }
 }
